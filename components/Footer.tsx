@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -23,34 +24,34 @@ function Footer() {
         <div className='flex flex-col sm:grid grid-cols-2 gap-4'>
           <div className='flex flex-col'>
             <h2 className='mb-5 text-xl'>About Us</h2>
-            <a href='/sign-up'>How it works</a>
-            <a href='/'>Testimonials</a>
-            <a href='/'>Careers</a>
-            <a href='/'>Inveshrefrs</a>
-            <a href='/'>Terms of Service</a>
+            <Link href='/sign-up'>How it works</Link>
+            <Link href='/'>Testimonials</Link>
+            <Link href='/'>Careers</Link>
+            <Link href='/'>Inveshrefrs</Link>
+            <Link href='/'>Terms of Service</Link>
           </div>
           <div className='flex flex-col'>
             <h2 className='mb-5 text-xl' >Contact Us</h2>
-            <a href='/'>Contact</a>
-            <a href='/'>Support</a>
-            <a href='/'>Destinations</a>
-            <a href='/'>Sponsorships</a>
+            <Link href='/'>Contact</Link>
+            <Link href='/'>Support</Link>
+            <Link href='/'>Destinations</Link>
+            <Link href='/'>Sponsorships</Link>
           </div>
         </div>
         <div className='flex flex-col sm:grid grid-cols-2 gap-4'>
           <div className='flex flex-col'>
             <h2 className='mb-5 text-xl' >Videos</h2>
-            <a href='/'>Submit Video</a>
-            <a href='/'>Ambassadors</a>
-            <a href='/'>Agency</a>
-            <a href='/'>Influencer</a>
+            <Link href='/'>Submit Video</Link>
+            <Link href='/'>Ambassadors</Link>
+            <Link href='/'>Agency</Link>
+            <Link href='/'>Influencer</Link>
           </div>
           <div className='flex flex-col'>
             <h2 className='mb-5 text-xl' >Social Media</h2>
-            <a href='/'>Instagram</a>
-            <a href='/'>Facebook</a>
-            <a href='/'>Youtube</a>
-            <a href='/'>Twitter</a>
+            <Link href='/'>Instagram</Link>
+            <Link href='/'>Facebook</Link>
+            <Link href='/'>Youtube</Link>
+            <Link href='/'>Twitter</Link>
           </div>
         </div>
       </div>
