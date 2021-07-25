@@ -4,14 +4,31 @@ import { GetServerSideProps } from 'next'
 import call from '../utils/requests';
 import HeadLines from '../components/HeadLines'
 
+
 interface IArticle{
   id:number|string,
-  name:string,
+  section:string,
   title:string,
-  description:string,
+  abstract:string,
   url:string,
-  urlToImage:string
+  media:Array<{
+   [index:string]:Array<{
+     [index:string]:string
+   }>
+  }>
 }
+
+
+
+
+// interface IArticle{
+//   id:number|string,
+//   section:string,
+//   title:string,
+//   abstract:string,
+//   url:string,
+//   urlToImage:string
+// }
 
 
 interface IArticles{
@@ -20,11 +37,11 @@ interface IArticles{
   articles:Array<IArticle>
 }
 
-export default function Home({articles}:{articles:Array<IArticle>}) {
+export default function Home({results}:{results:Array<IArticle>}) {
   return (
     <div className={styles.container}>
       <HeroSection></HeroSection>
-      <HeadLines articles ={articles}></HeadLines> 
+      <HeadLines articles ={results}></HeadLines> 
     </div>
   )
 }

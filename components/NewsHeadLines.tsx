@@ -3,19 +3,22 @@ import HeadLine from './HeadLine'
 
 interface IArticle{
     id:number|string,
-    name:string,
+    section:string,
     title:string,
-    description:string,
+    abstract:string,
     url:string,
-    urlToImage:string
+    media:Array<{
+     [index:string]:Array<{
+       [index:string]:string
+     }>
+    }> 
 }
 
 export default function NewsHeadLines({articles}:{articles:Array<IArticle>}) {
-    const head:Array<IArticle> = articles.filter( el => el.urlToImage)
     return (
-        <div key='headlines' className='flex flex-col lg:grid grid-cols-3 gap-4 mt-10 mb-10'>
+        <div key='headlines' className='flex flex-col lg:grid grid-cols-3 gap-4 mt-10 mb-10 w-full h-full'>
             {
-                head.map( (el:IArticle, index:number) => (
+                articles?.filter(el => el.media.length )?.map( (el:IArticle, index:number) => (
                     <HeadLine key={`${el.id}` + index} news={true} el ={el} index={index}></HeadLine>
                ))
             }
