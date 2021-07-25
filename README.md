@@ -2,8 +2,8 @@
 
 ## Description
 Nextjs(typescript) app .
-Listing News from NEWS API API's .
-Live demo can be found in https://list-clone.vercel.app/
+Listing News from new york times API's .
+Live demo can be found in https://news-nyt-app.vercel.app/news
 
 ## Technologies & Tools
 
