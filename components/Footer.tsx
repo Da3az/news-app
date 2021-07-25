@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 function Footer() {
   return (
-    <div className='relative text-white z-4 bg-blackWh flex flex-col justifiy-center items-center p-40 pt-10'>
-      <section>
+    <div className='relative w-full text-white z-4 bg-blackWh flex flex-col justifiy-center items-center pt-10'>
+      <section className='w-3/4 m-auto flex flex-col justify-center items-center'>
         <p className='p-5 pt-0'>
           Join the newsletter and we will make sure that you stay updated
         </p>
@@ -20,9 +20,9 @@ function Footer() {
           </form>
         </div>
       </section>
-      <div className='flex flex-col lg:grid grid-cols-2 gap-4 mt-10'>
+      <div className='flex flex-col lg:grid grid-cols-2 gap-4 w-3/4 m-auto mb-10 mt-10 '>
         <div className='flex flex-col sm:grid grid-cols-2 gap-4'>
-          <div className='flex flex-col'>
+          <div className='pl-5 border-l flex flex-col '>
             <h2 className='mb-5 text-xl'>About Us</h2>
             <Link href='/sign-up'>How it works</Link>
             <Link href='/'>Testimonials</Link>
@@ -30,7 +30,7 @@ function Footer() {
             <Link href='/'>Inveshrefrs</Link>
             <Link href='/'>Terms of Service</Link>
           </div>
-          <div className='flex flex-col'>
+          <div className='pl-5 border-l flex flex-col'>
             <h2 className='mb-5 text-xl' >Contact Us</h2>
             <Link href='/'>Contact</Link>
             <Link href='/'>Support</Link>
@@ -39,14 +39,14 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col sm:grid grid-cols-2 gap-4'>
-          <div className='flex flex-col'>
+          <div className='pl-5 border-l flex flex-col'>
             <h2 className='mb-5 text-xl' >Videos</h2>
             <Link href='/'>Submit Video</Link>
             <Link href='/'>Ambassadors</Link>
             <Link href='/'>Agency</Link>
             <Link href='/'>Influencer</Link>
           </div>
-          <div className='flex flex-col'>
+          <div className='pl-5 border-l flex flex-col'>
             <h2 className='mb-5 text-xl' >Social Media</h2>
             <Link href='/'>Instagram</Link>
             <Link href='/'>Facebook</Link>
