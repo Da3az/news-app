@@ -15,7 +15,7 @@ const API_KEY =process.env.API_KEY
 const call = async (category:string|undefined=undefined) => {
     const data = await fetch
     (
-     `https://api.nytimes.com/svc/mostpopular/v2/${category ? category : 'viewed/7'}.json?api-key=rxBsy8wXQCDZG5aAZuxrmwovU2GxvAg5`
+     `https://api.nytimes.com/svc/mostpopular/v2/${category ? category : 'viewed/7'}.json?api-key=${API_KEY}`
     )
     .then(response => {
         return response.json()
